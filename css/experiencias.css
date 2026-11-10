@@ -1,0 +1,214 @@
+/* Introducción de experiencias. */
+.experiences-intro {
+  padding: 88px 32px 104px;
+}
+
+.experiences-intro .section-heading__description {
+  margin-top: 32px;
+}
+
+.experiences-intro .section-actions {
+  margin-top: 48px;
+}
+
+.experiences-intro .button {
+  min-width: 374px;
+}
+
+.experiences-intro .button--gold {
+  background: var(--color-gold-dark);
+}
+
+/* Tarjetas de experiencias y logotipos de aliados. */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  max-width: 1664px;
+  margin-inline: auto;
+  padding: 0 32px 32px;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 37.125% 39.875% 23%;
+  min-height: 363px;
+  overflow: hidden;
+  border-radius: 32px;
+  background: var(--color-sand);
+  box-shadow: var(--shadow-card);
+}
+
+.experience-card__image {
+  width: 100%;
+  height: 363px;
+  object-fit: cover;
+}
+
+.experience-card__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 56px 64px 56px 114px;
+}
+
+.experience-card h2 {
+  font-size: 56px;
+  line-height: 1.15;
+}
+
+.experience-card p {
+  max-width: 386px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+}
+
+.experience-card__partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  align-self: stretch;
+  min-width: 0;
+  margin-block: 52px;
+  padding-inline: 46px;
+  border-left: 1px solid #a3a3a3;
+}
+
+.experience-card__partners img {
+  width: auto;
+  max-width: 214px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.experience-card__partners img + img {
+  max-height: 132px;
+}
+
+.experience-card--no-partner .experience-card__copy {
+  grid-column: 2 / -1;
+}
+
+.experience-disclaimer {
+  padding: 34px 32px;
+  background: #0e2a4319;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+@media (max-width: 1599px) {
+  .experiences-intro .button {
+    min-width: 310px;
+  }
+  .experience-card__copy {
+    padding-left: 70px;
+    padding-right: 40px;
+  }
+  .experience-card h2 {
+    font-size: 48px;
+  }
+  .experience-card p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .experience-card__partners {
+    padding-inline: 32px;
+  }
+  .experience-card__partners img {
+    max-width: 180px;
+  }
+  .experience-disclaimer {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .experience-card {
+    grid-template-columns: 36% 40% 24%;
+  }
+  .experience-card__copy {
+    padding: 40px;
+  }
+  .experience-card h2 {
+    font-size: 40px;
+  }
+  .experience-card__partners {
+    padding-inline: 24px;
+  }
+  .experience-card__partners img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .experiences-intro {
+    padding: 56px 24px;
+  }
+  .experiences-intro .section-heading__description {
+    margin-top: 24px;
+  }
+  .experiences-intro .section-actions {
+    margin-top: 32px;
+  }
+  .experiences-intro .button {
+    min-width: 0;
+    width: 100%;
+    max-width: 374px;
+  }
+  .experience-list {
+    gap: 28px;
+    padding: 0 24px 36px;
+  }
+  .experience-card {
+    grid-template-columns: 1fr;
+    border-radius: 28px;
+  }
+  .experience-card__image {
+    height: 260px;
+  }
+  .experience-card__copy {
+    padding: 32px 28px;
+  }
+  .experience-card h2 {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+  .experience-card p {
+    margin-top: 18px;
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .experience-card__partners {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 28px;
+    padding: 24px 0 28px;
+    border-left: 0;
+    border-top: 1px solid #a3a3a3;
+  }
+  .experience-card__partners img {
+    max-width: 145px;
+    max-height: 110px;
+  }
+  .experience-card__partners img + img {
+    max-height: 100px;
+  }
+  .experience-card--no-partner .experience-card__copy {
+    grid-column: auto;
+  }
+  .experience-disclaimer {
+    padding: 24px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

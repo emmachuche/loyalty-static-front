@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Loyalty Destination Club. Hoteles, viajes y experiencias en el Caribe mexicano."
+    />
+    <title>Hoteles | Loyalty Destination Club</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/hoteles.css" />
+    <script src="js/principal.js" defer></script>
+
+    <script src="js/filtros-hoteles.js" defer></script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- COMPONENTE: Cabecera y navegación principal -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Loyalty Destination Club: inicio">
+          <img src="assets/logo.svg" alt="Loyalty Destination Club" width="326" height="55" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          data-menu-toggle
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 5h18M3 12h18M3 19h18" />
+          </svg>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="el-club.html">El Club</a></li>
+            <li><a href="hoteles.html" aria-current="page">Hoteles</a></li>
+            <li><a href="experiencias.html">Experiencias</a></li>
+            <li><a href="index.html#beneficios">Beneficios</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button
+            class="language-control"
+            type="button"
+            aria-label="Idioma: español"
+            data-action="cambiar-idioma"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" /></svg
+            ><span>Es</span>
+          </button>
+          <a class="button button--nav" href="#">Acceso a Socios</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- COMPONENTE: Banner principal -->
+      <section class="hero hero--hotels" aria-labelledby="hero-title">
+        <img class="hero__image" src="assets/hero-hoteles.webp" alt="" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">HOTELES EN EL CARIBE MEXICANO</p>
+          <h1 id="hero-title">Nuestros Hoteles</h1>
+          <p class="hero__description">
+            Nuevos hoteles para elegir cómo y donde<br />vivir tus vacaciones
+          </p>
+        </div>
+      </section>
+
+      <!-- COMPONENTE: Hotel principal -->
+      <section class="featured-hotel-section" aria-labelledby="featured-hotel-title">
+        <article class="featured-hotel">
+          <img
+            src="assets/oleo-principal.webp"
+            alt="Vista de Óleo Yalmakan junto a la playa"
+            width="862"
+            height="576"
+            loading="eager"
+          />
+          <div class="featured-hotel__copy">
+            <p class="eyebrow">CANCÚN</p>
+            <h2 id="featured-hotel-title">Óleo Yalmakan</h2>
+            <p>Nuestro hotel principal.</p>
+            <a class="button button--gold" href="hotel-oleo-yalmakan.html">Conocer el hotel</a>
+          </div>
+        </article>
+      </section>
+      <!-- COMPONENTE: Catálogo de hoteles y filtros locales -->
+      <section
+        class="hotel-catalog section--sand"
+        aria-labelledby="hotel-catalog-title"
+        data-hotel-catalog
+      >
+        <h2 id="hotel-catalog-title">Explore Nuestros Hoteles</h2>
+        <div class="hotel-filters" role="group" aria-label="Filtrar hoteles por destino">
+          <button
+            class="hotel-filter is-active"
+            type="button"
+            data-hotel-filter="todos"
+            aria-pressed="true"
+          >
+            Todos
+          </button>
+          <button
+            class="hotel-filter"
+            type="button"
+            data-hotel-filter="cancun"
+            aria-pressed="false"
+          >
+            Cancún
+          </button>
+          <button
+            class="hotel-filter"
+            type="button"
+            data-hotel-filter="playa-del-carmen"
+            aria-pressed="false"
+          >
+            Playa del Carmen
+          </button>
+          <button class="hotel-filter" type="button" data-hotel-filter="tulum" aria-pressed="false">
+            Tulum
+          </button>
+          <button
+            class="hotel-filter"
+            type="button"
+            data-hotel-filter="cozumel"
+            aria-pressed="false"
+          >
+            Cozumel
+          </button>
+        </div>
+        <div class="hotel-grid">
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="cozumel">
+            <img
+              src="assets/playa-azul.webp"
+              alt="Playa Azul"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">COZUMEL</p>
+                <h3>Playa Azul</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver Playa Azul"
+                data-action="ver-hotel"
+                data-hotel="playa-azul"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="playa-del-carmen">
+            <img
+              src="assets/antera.webp"
+              alt="Antera Hotel"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">PLAYA DEL CARMEN</p>
+                <h3>Antera Hotel</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver Antera Hotel"
+                data-action="ver-hotel"
+                data-hotel="antera"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="playa-del-carmen">
+            <img
+              src="assets/hotel-52.webp"
+              alt="Hotel 52"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">PLAYA DEL CARMEN</p>
+                <h3>Hotel 52</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver Hotel 52"
+                data-action="ver-hotel"
+                data-hotel="hotel-52"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="tulum">
+            <img
+              src="assets/naala-tulum.webp"
+              alt="Naala Tulum"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">TULUM</p>
+                <h3>Naala Tulum</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver Naala Tulum"
+                data-action="ver-hotel"
+                data-hotel="naala-tulum"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="cancun">
+            <img
+              src="assets/bsea-cancun.webp"
+              alt="BSEA Cancún"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">CANCÚN</p>
+                <h3>BSEA Cancún</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver BSEA Cancún"
+                data-action="ver-hotel"
+                data-hotel="bsea-cancun"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="cancun">
+            <img
+              src="assets/cyan-resort.webp"
+              alt="Cyan Resort"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">CANCÚN</p>
+                <h3>Cyan Resort</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver Cyan Resort"
+                data-action="ver-hotel"
+                data-hotel="cyan-resort"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="playa-del-carmen">
+            <img
+              src="assets/san-pedro.webp"
+              alt="San Pedro Hotel"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">PLAYA DEL CARMEN</p>
+                <h3>San Pedro Hotel</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver San Pedro Hotel"
+                data-action="ver-hotel"
+                data-hotel="san-pedro"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- COMPONENTE: Tarjeta de hotel -->
+          <article class="hotel-card" data-hotel-card data-destination="playa-del-carmen">
+            <img
+              src="assets/bio-distinctive.webp"
+              alt="Bio Distinctive"
+              width="478"
+              height="278"
+              loading="eager"
+            />
+            <div class="hotel-card__body">
+              <div>
+                <p class="hotel-card__location">PLAYA DEL CARMEN</p>
+                <h3>Bio Distinctive</h3>
+              </div>
+              <button
+                class="hotel-card__link"
+                type="button"
+                aria-label="Ver Bio Distinctive"
+                data-action="ver-hotel"
+                data-hotel="bio-distinctive"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m9 4 8 8-8 8" />
+                </svg>
+              </button>
+            </div>
+          </article>
+        </div>
+        <p class="sr-only" aria-live="polite" data-hotel-results></p>
+      </section>
+      <!-- COMPONENTE: Llamada a la acción de hoteles -->
+      <section class="hotels-callout section--navy" aria-labelledby="hotels-callout-title">
+        <img
+          src="assets/banner-hoteles.webp"
+          alt="Terraza junto al mar al atardecer"
+          width="1109"
+          height="550"
+          loading="eager"
+        />
+        <div class="hotels-callout__copy">
+          <h2 id="hotels-callout-title">¿Quieres hospedarte<br />Con nosotros?</h2>
+          <a class="button button--gold" href="index.html#contacto">Contáctanos</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- COMPONENTE: Pie de página -->
+    <footer class="site-footer">
+      <img
+        class="site-footer__mark"
+        src="assets/mark.svg"
+        alt="Loyalty Destination Club"
+        width="58"
+        height="55"
+      />
+      <p class="site-footer__copyright">© 2026 Minivac Certificate. All rights reserved.</p>
+      <div class="site-footer__provider">
+        <p>Powered by Valcubity<sup>®</sup> · © 2026 Valcubity. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

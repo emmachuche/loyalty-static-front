@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Loyalty Destination Club. Hoteles, viajes y experiencias en el Caribe mexicano."
+    />
+    <title>Experiencias | Loyalty Destination Club</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/experiencias.css" />
+    <script src="js/principal.js" defer></script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- COMPONENTE: Cabecera y navegación principal -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Loyalty Destination Club: inicio">
+          <img src="assets/logo.svg" alt="Loyalty Destination Club" width="326" height="55" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          data-menu-toggle
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 5h18M3 12h18M3 19h18" />
+          </svg>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="el-club.html">El Club</a></li>
+            <li><a href="hoteles.html">Hoteles</a></li>
+            <li><a href="experiencias.html" aria-current="page">Experiencias</a></li>
+            <li><a href="index.html#beneficios">Beneficios</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button
+            class="language-control"
+            type="button"
+            aria-label="Idioma: español"
+            data-action="cambiar-idioma"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" /></svg
+            ><span>Es</span>
+          </button>
+          <a class="button button--nav" href="#">Acceso a Socios</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- COMPONENTE: Banner principal -->
+      <section class="hero hero--experiences" aria-labelledby="hero-title">
+        <img class="hero__image" src="assets/hero-experiencias.webp" alt="" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1 id="hero-title">Experiencias</h1>
+          <p class="hero__description">
+            Vive momentos inolvidables que combinan<br />mar, golf, cultura y alta gastronomía
+          </p>
+        </div>
+      </section>
+
+      <!-- COMPONENTE: Introducción de experiencias -->
+      <section class="experiences-intro" aria-labelledby="experiences-title">
+        <header class="section-heading">
+          <p class="eyebrow">EXPERIENCIAS</p>
+          <h2 id="experiences-title">Experiencias Que Se Recuerdan</h2>
+          <p class="section-heading__description">
+            Golf, mar, cultura y buena mesa en el Caribe Mexicano.
+          </p>
+        </header>
+        <div class="section-actions">
+          <a class="button button--gold" href="login.html">Acceso a socios</a
+          ><a class="button" href="index.html#contacto">Quiero más información</a>
+        </div>
+      </section>
+      <!-- COMPONENTE: Experiencias y aliados -->
+      <section class="experience-list" aria-label="Experiencias disponibles">
+        <article class="experience-card">
+          <img
+            class="experience-card__image"
+            src="assets/experiencia-yate.webp"
+            alt="Navega el Caribe"
+            width="594"
+            height="363"
+            loading="eager"
+          />
+          <div class="experience-card__copy">
+            <h2>Navega el Caribe</h2>
+            <p>Vive el mar a bordo de un yate con Platinum Yacht Club.</p>
+          </div>
+          <div class="experience-card__partners">
+            <img
+              src="assets/platinum-yacht-club.svg"
+              alt="Platinum One Yacht Club"
+              loading="eager"
+            />
+          </div>
+        </article>
+        <article class="experience-card">
+          <img
+            class="experience-card__image"
+            src="assets/experiencia-golf.webp"
+            alt="Golf en el Camaleón Mayakoba"
+            width="594"
+            height="363"
+            loading="eager"
+          />
+          <div class="experience-card__copy">
+            <h2>Golf en el<br />Camaleón Mayakoba</h2>
+            <p>Juega en uno de los campos más reconocidos de México.</p>
+          </div>
+          <div class="experience-card__partners">
+            <img src="assets/camaleon-mayakoba.svg" alt="El Camaleón Mayakoba" loading="eager" />
+          </div>
+        </article>
+        <article class="experience-card">
+          <img
+            class="experience-card__image"
+            src="assets/experiencia-tours.webp"
+            alt="Tours y excursiones"
+            width="594"
+            height="363"
+            loading="eager"
+          />
+          <div class="experience-card__copy">
+            <h2>Tours y excursiones</h2>
+            <p>Cenotes, zonas arqueológicas y aventuras con World2Meet</p>
+          </div>
+          <div class="experience-card__partners">
+            <img src="assets/world2meet.svg" alt="World2Meet" loading="eager" />
+          </div>
+        </article>
+        <article class="experience-card">
+          <img
+            class="experience-card__image"
+            src="assets/experiencia-gastronomia.webp"
+            alt="Buena Mesa"
+            width="594"
+            height="363"
+            loading="eager"
+          />
+          <div class="experience-card__copy">
+            <h2>Buena Mesa</h2>
+            <p>Beneficios en Grupo Anderson’s y en Restaurante Navios</p>
+          </div>
+          <div class="experience-card__partners">
+            <img src="assets/grupo-andersons.svg" alt="Grupo Anderson’s" loading="eager" />
+            <img
+              src="assets/navios-logo.webp"
+              alt="Navios Mexican Fusion Seafood"
+              loading="eager"
+            />
+          </div>
+        </article>
+        <article class="experience-card experience-card--no-partner">
+          <img
+            class="experience-card__image"
+            src="assets/experiencia-local.webp"
+            alt="Experiencias locales"
+            width="594"
+            height="363"
+            loading="eager"
+          />
+          <div class="experience-card__copy">
+            <h2>Experiencias locales</h2>
+            <p>Juega en uno de los campos más reconocidos de México.</p>
+          </div>
+        </article>
+      </section>
+      <p class="experience-disclaimer">
+        Beneficios sujetos a disponibilidad y a los términos de cada aliado.
+      </p>
+
+      <!-- COMPONENTE: Información de contacto -->
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-section__inner">
+          <header class="contact-section__heading">
+            <p class="eyebrow">CONTÁCTENOS</p>
+            <h2 id="contact-title">Estamos Para Ayudarle</h2>
+            <p>
+              ¿Tiene preguntas sobre nuestra membresía?<br />Con gusto resolveremos todas sus dudas.
+            </p>
+          </header>
+          <dl class="contact-section__details">
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m6 3 4 5-3 3c1.5 3 3 4.5 6 6l3-3 5 4c-1 4-4 5-8 3C6 18 3 13 2 7 1.5 4 3 2 6 3Z"
+                  /></svg
+                >Teléfono
+              </dt>
+              <dd>+1 (800) 555-0199</dd>
+            </div>
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="5" width="20" height="14" rx="1" />
+                  <path d="m2 5 10 9L22 5M2 19l7-7m13 7-7-7" /></svg
+                >Email
+              </dt>
+              <dd>Available through the Help Center</dd>
+            </div>
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 4v8H5" /></svg
+                >Horarios
+              </dt>
+              <dd>Mon – Fri, 9:00 AM – 6:00 PM (EST)</dd>
+            </div>
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 9c0 6-8 13-8 13S4 15 4 9a8 8 0 1 1 16 0Z" />
+                  <circle cx="12" cy="9" r="3" /></svg
+                >Dirección
+              </dt>
+              <dd>Blvd. Kukulcán Km 14.5, Zona Hotelera, 77500 Cancún, Q.R., Mexico</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <!-- COMPONENTE: Pie de página -->
+    <footer class="site-footer site-footer--dark">
+      <img
+        class="site-footer__mark"
+        src="assets/portal-mark.svg"
+        alt="Loyalty Destination Club"
+        width="58"
+        height="55"
+      />
+      <p class="site-footer__copyright">© 2026 Minivac Certificate. All rights reserved.</p>
+      <div class="site-footer__provider">
+        <p>Powered by Valcubity<sup>®</sup> · © 2026 Valcubity. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

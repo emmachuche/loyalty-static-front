@@ -1,0 +1,296 @@
+/* Propósito, misión y visión. */
+.purpose-section {
+  padding: 88px 32px 104px;
+}
+
+.purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  max-width: 1316px;
+  margin: 60px auto 0;
+}
+
+.purpose-card {
+  min-height: 375px;
+  padding: 28px 92px 42px;
+  border-radius: 58px;
+  background: var(--color-sand);
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.purpose-card > .icon {
+  width: 114px;
+  height: 114px;
+  margin: 0 auto 38px;
+  color: #c09759;
+}
+
+.purpose-card h3 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.purpose-card p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+}
+
+/* Valores de la marca. */
+.values-section {
+  padding: 120px 32px 132px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 36px;
+  max-width: 1380px;
+  margin: 72px auto 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.values-grid .icon {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 24px;
+  color: #c09759;
+}
+
+.values-grid h3 {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+}
+
+/* Ventajas del club. */
+.club-perks {
+  padding: 140px 32px 89px;
+}
+
+.club-perks__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  max-width: 1510px;
+  margin: 72px auto 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.club-perks__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 164px;
+  height: 164px;
+  margin-inline: auto;
+  border: 1px solid var(--color-heading);
+  border-radius: 50%;
+  color: var(--color-heading);
+}
+
+.club-perks__icon .icon {
+  width: 94px;
+  height: 94px;
+}
+
+.club-perks h3 {
+  margin-top: 36px;
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Atención personalizada. */
+.support-section {
+  display: grid;
+  grid-template-columns: 57.08% 42.92%;
+  min-height: 548px;
+}
+
+.support-section > img {
+  width: 100%;
+  height: 548px;
+  object-fit: cover;
+}
+
+.support-section__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 72px 104px 72px 190px;
+}
+
+.support-section h2 {
+  margin-top: 14px;
+  font-size: 66px;
+  line-height: 74px;
+  white-space: nowrap;
+}
+
+.support-section__copy > p:not(.eyebrow) {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
+}
+
+.support-section .button {
+  width: 374px;
+  margin-top: 36px;
+  background: var(--color-gold-dark);
+}
+
+@media (max-width: 1599px) {
+  .purpose-card {
+    padding-inline: 60px;
+  }
+  .purpose-card p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .values-grid {
+    gap: 24px;
+  }
+  .values-grid h3 {
+    font-size: 15px;
+  }
+  .club-perks h3 {
+    font-size: 17px;
+  }
+  .support-section__copy {
+    padding-left: 90px;
+    padding-right: 64px;
+  }
+  .support-section h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .support-section__copy > p:not(.eyebrow) {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .purpose-card {
+    padding-inline: 36px;
+  }
+  .values-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 48px 24px;
+    max-width: 780px;
+  }
+  .club-perks__grid {
+    gap: 28px;
+  }
+  .support-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .support-section__copy {
+    padding-inline: 48px;
+  }
+  .support-section h2 {
+    font-size: 48px;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .purpose-section {
+    padding: 56px 24px;
+  }
+  .purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    max-width: 480px;
+    margin-top: 36px;
+  }
+  .purpose-card {
+    min-height: 0;
+    padding: 32px 28px;
+    border-radius: 36px;
+  }
+  .purpose-card > .icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 24px;
+  }
+  .purpose-card h3 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .purpose-card p {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .values-section {
+    padding: 56px 24px;
+  }
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 24px;
+    margin-top: 36px;
+  }
+  .values-grid .icon {
+    width: 76px;
+    height: 76px;
+    margin-bottom: 20px;
+  }
+  .values-grid h3 {
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .club-perks {
+    padding: 56px 24px;
+  }
+  .club-perks__grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    margin-top: 36px;
+  }
+  .club-perks__icon {
+    width: 124px;
+    height: 124px;
+  }
+  .club-perks__icon .icon {
+    width: 74px;
+    height: 74px;
+  }
+  .club-perks h3 {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .support-section {
+    grid-template-columns: 1fr;
+  }
+  .support-section > img {
+    height: 310px;
+  }
+  .support-section__copy {
+    padding: 48px 28px;
+  }
+  .support-section h2 {
+    font-size: 44px;
+    line-height: 1.1;
+  }
+  .support-section__copy > p:not(.eyebrow) {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .support-section .button {
+    margin-top: 28px;
+    width: 100%;
+  }
+}

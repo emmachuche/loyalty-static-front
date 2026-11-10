@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Loyalty Destination Club. Hoteles, viajes y experiencias en el Caribe mexicano."
+    />
+    <title>El Club | Loyalty Destination Club</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/club.css" />
+    <script src="js/principal.js" defer></script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- COMPONENTE: Cabecera y navegación principal -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Loyalty Destination Club: inicio">
+          <img src="assets/logo.svg" alt="Loyalty Destination Club" width="326" height="55" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          data-menu-toggle
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 5h18M3 12h18M3 19h18" />
+          </svg>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="el-club.html" aria-current="page">El Club</a></li>
+            <li><a href="hoteles.html">Hoteles</a></li>
+            <li><a href="experiencias.html">Experiencias</a></li>
+            <li><a href="index.html#beneficios">Beneficios</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button
+            class="language-control"
+            type="button"
+            aria-label="Idioma: español"
+            data-action="cambiar-idioma"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" /></svg
+            ><span>Es</span>
+          </button>
+          <a class="button button--nav" href="#">Acceso a Socios</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- COMPONENTE: Banner principal -->
+      <section class="hero hero--club" aria-labelledby="hero-title">
+        <img class="hero__image" src="assets/hero-club.webp" alt="" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1 id="hero-title">Solos Loyalty<br />Destination Club</h1>
+          <p class="hero__description">
+            Creamos vacaciones que se disfrutan hoy<br />y se recuerdan siempre.
+          </p>
+        </div>
+      </section>
+
+      <!-- COMPONENTE: Propósito, misión y visión -->
+      <section class="purpose-section" aria-labelledby="purpose-title">
+        <header class="section-heading">
+          <p class="eyebrow">EL CLUB</p>
+          <h2 id="purpose-title">Nuestro Proposito</h2>
+          <p class="section-heading__description">
+            Trascender a través de experiencias que enriquezcan la vida de las personas,<br
+              class="desktop-break"
+            />fomenten el equilibrio y creen momentos que perduren entre generaciones
+          </p>
+        </header>
+
+        <div class="purpose-grid">
+          <article class="purpose-card">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="13" r="9" />
+              <circle cx="11" cy="13" r="5" />
+              <circle cx="11" cy="13" r="1" />
+              <path d="m11 13 9-9m-1-1 1-3 1 3 3 1-3 1m-15 16-1 3m11-3 1 3" />
+            </svg>
+            <h3>Misión</h3>
+            <p>
+              Crear experiencias vacacionales extraordinarias de alta calidad que generen felicidad,
+              pertenencia, confianza y contribuyan a una mejor calidad de vida.
+            </p>
+          </article>
+          <article class="purpose-card">
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M2 21 9 7l5 8 3-6 6 12H2ZM9 7V1h5l-2 2 2 2H9M6 13h6m3 1h4" />
+            </svg>
+            <h3>Visión</h3>
+            <p>
+              Ser líder en la industria de clubes vacacionales y referente del destino, México y el
+              mundo
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- COMPONENTE: Valores del club -->
+      <section class="values-section section--navy" aria-labelledby="values-title">
+        <header class="section-heading">
+          <p class="eyebrow">EL VALOR DE SU ESTANCIA</p>
+          <h2 id="values-title">Nuestros Valores</h2>
+        </header>
+
+        <ul class="values-grid">
+          <li>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 21 3 12a6 6 0 0 1 9-8 6 6 0 0 1 9 8l-9 9Z" />
+            </svg>
+            <h3>Pasión por servir</h3>
+          </li>
+          <li>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7Z" />
+            </svg>
+            <h3>Transparencia</h3>
+          </li>
+          <li>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m12 2 9 4v7c0 5-9 9-9 9s-9-4-9-9V6l9-4Z" />
+              <path d="m8 12 3 3 5-6" />
+            </svg>
+            <h3>Confianza</h3>
+          </li>
+          <li>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z" />
+            </svg>
+            <h3>Excelencia</h3>
+          </li>
+          <li>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M8 16C2 10 5 3 12 3s10 7 4 13l-1 4H9l-1-4Zm1 4h6m-5 3h4M12 0v1M1 10h2m18 0h2M3 3l2 2m14 0 2-2m-18 16 2-2m14 0 2 2M9 10l3 3 3-3"
+              />
+            </svg>
+            <h3>Innovación</h3>
+          </li>
+          <li>
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 3c5 5-4 7-2 12s7 2 6 6M3 12c8 2 10-9 9-9m8 14c-6-5-8 4-8 4" />
+            </svg>
+            <h3>Vitalidad</h3>
+          </li>
+        </ul>
+      </section>
+      <!-- COMPONENTE: Ventajas de la membresía -->
+      <section class="club-perks section--sand" aria-labelledby="club-perks-title">
+        <header class="section-heading">
+          <p class="eyebrow">EL VALOR DE SU ESTANCIA</p>
+          <h2 id="club-perks-title">Nuestros Valores</h2>
+        </header>
+
+        <ul class="club-perks__grid">
+          <li>
+            <span class="club-perks__icon"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2 10v12m20-12v12M2 18h20M4 10V4h16v6M4 10h16a2 2 0 0 1 2 2v6H2v-6a2 2 0 0 1 2-2ZM6 10V7h5v3m2 0V7h5v3"
+                /></svg
+            ></span>
+            <h3>Hospédate en nuestros<br />hoteles del caribe mexicano</h3>
+          </li>
+          <li>
+            <span class="club-perks__icon"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m22 2-7 7-6-1-4 3 6 2-4 5-4-1-2 2 6 4 3-2-1-4 5-4 2 6 3-4-1-6 5-7Z" /></svg
+            ></span>
+            <h3>Viajar por el mundo con<br />precios preferenciales</h3>
+          </li>
+          <li>
+            <span class="club-perks__icon"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 17a9 9 0 0 1 18 0H3Zm-1 3h20M12 5V2m-2 0h4M1 23h22" /></svg
+            ></span>
+            <h3>Vive experiencias con<br />nuestros aliados</h3>
+          </li>
+        </ul>
+      </section>
+      <!-- COMPONENTE: Atención a socios -->
+      <section class="support-section section--navy" aria-labelledby="support-title">
+        <img
+          src="assets/atencion-socios.webp"
+          alt="Atención personalizada a una pareja de socios"
+          width="1096"
+          height="548"
+          loading="eager"
+        />
+        <div class="support-section__copy">
+          <p class="eyebrow">EL CLUB</p>
+          <h2 id="support-title">Siempre contigo</h2>
+          <p>
+            Nuestro equipo te acompaña antes,<br class="desktop-break" />durante y después del
+            viaje.
+          </p>
+          <a class="button button--gold" href="index.html#contacto">Quiero más información</a>
+        </div>
+      </section>
+
+      <!-- COMPONENTE: Información de contacto -->
+      <section class="contact-section" id="contacto" aria-labelledby="contact-title">
+        <div class="contact-section__inner">
+          <header class="contact-section__heading">
+            <p class="eyebrow">CONTÁCTENOS</p>
+            <h2 id="contact-title">Estamos Para Ayudarle</h2>
+            <p>
+              ¿Tiene preguntas sobre nuestra membresía?<br />Con gusto resolveremos todas sus dudas.
+            </p>
+          </header>
+          <dl class="contact-section__details">
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="m6 3 4 5-3 3c1.5 3 3 4.5 6 6l3-3 5 4c-1 4-4 5-8 3C6 18 3 13 2 7 1.5 4 3 2 6 3Z"
+                  /></svg
+                >Teléfono
+              </dt>
+              <dd>+1 (800) 555-0199</dd>
+            </div>
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="2" y="5" width="20" height="14" rx="1" />
+                  <path d="m2 5 10 9L22 5M2 19l7-7m13 7-7-7" /></svg
+                >Email
+              </dt>
+              <dd>Available through the Help Center</dd>
+            </div>
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 4v8H5" /></svg
+                >Horarios
+              </dt>
+              <dd>Mon – Fri, 9:00 AM – 6:00 PM (EST)</dd>
+            </div>
+            <div class="contact-item">
+              <dt>
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 9c0 6-8 13-8 13S4 15 4 9a8 8 0 1 1 16 0Z" />
+                  <circle cx="12" cy="9" r="3" /></svg
+                >Dirección
+              </dt>
+              <dd>Blvd. Kukulcán Km 14.5, Zona Hotelera, 77500 Cancún, Q.R., Mexico</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <!-- COMPONENTE: Pie de página -->
+    <footer class="site-footer site-footer--dark">
+      <img
+        class="site-footer__mark"
+        src="assets/portal-mark.svg"
+        alt="Loyalty Destination Club"
+        width="58"
+        height="55"
+      />
+      <p class="site-footer__copyright">© 2026 Minivac Certificate. All rights reserved.</p>
+      <div class="site-footer__provider">
+        <p>Powered by Valcubity<sup>®</sup> · © 2026 Valcubity. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

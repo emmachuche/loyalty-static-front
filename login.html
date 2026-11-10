@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Loyalty Destination Club. Hoteles, viajes y experiencias en el Caribe mexicano."
+    />
+    <title>Acceso a socios | Loyalty Destination Club</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/principal.js" defer></script>
+  </head>
+  <body class="login-page">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- COMPONENTE: Navegación de login -->
+    <nav class="login-navigation" aria-label="Navegación de acceso">
+      <a class="button button--outline" href="index.html">Regresar a Home</a
+      ><button class="login-language" type="button" data-action="cambiar-idioma">En | Es</button>
+    </nav>
+    <main class="login-main" id="contenido">
+      <!-- COMPONENTE: Tarjeta de acceso -->
+      <section class="login-card" aria-labelledby="login-title">
+        <img
+          class="login-card__logo"
+          src="assets/logo-vertical.png"
+          alt="Loyalty Destination Club"
+          width="154"
+          height="134"
+        />
+        <h1 id="login-title">Bienvenido</h1>
+        <p>Identifíquese</p>
+        <form class="login-form" data-static-form>
+          <div class="field">
+            <label for="login-email">Correo</label
+            ><input
+              id="login-email"
+              name="correo"
+              type="email"
+              placeholder="Correo"
+              autocomplete="email"
+            />
+          </div>
+          <div class="field">
+            <label for="login-password">Contraseña</label
+            ><input
+              id="login-password"
+              name="contrasena"
+              type="password"
+              placeholder="**********"
+              autocomplete="current-password"
+            />
+          </div>
+          <button class="button" type="button" data-action="iniciar-sesion">Iniciar sesión</button>
+          <button
+            class="inline-link login-form__recovery"
+            type="button"
+            data-action="recuperar-contrasena"
+          >
+            ¿Olvidó su contraseña?
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="login-footer">
+      <p>Powered by Valcubity<sup>®</sup> · © 2026 Valcubity. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
