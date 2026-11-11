@@ -1,0 +1,316 @@
+/* Información de contacto. */
+.informes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+  max-width: 1508px;
+  min-height: 379px;
+  margin: auto;
+  padding: 80px 32px;
+}
+
+.introduccion-informes h2 {
+  margin-top: 20px;
+  color: #000;
+  font-size: 64px;
+}
+
+.introduccion-informes > p:last-child {
+  margin-top: 28px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.datos-informes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.datos-informes .icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 28px;
+}
+
+.datos-informes dd {
+  margin: 0;
+}
+.datos-informes a {
+  color: inherit;
+  text-decoration: none;
+}
+.datos-informes a:hover {
+  text-decoration: underline;
+}
+
+.acceso-socios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  min-height: 340px;
+  padding: 72px 32px;
+  color: #fff;
+  text-align: center;
+  background: var(--color-navy) url("../assets/fondo-socios.webp") center / cover;
+}
+
+.acceso-socios h2 {
+  color: #fff;
+  font-size: 64px;
+}
+.acceso-socios p {
+  margin-top: 16px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+}
+.acceso-socios .button {
+  min-width: 372px;
+}
+
+/* Formulario estático: el envío se conecta en principal.js. */
+.seccion-formulario {
+  padding: 104px 24px 100px;
+  background:
+    linear-gradient(#fcfaf5e6, #fcfaf5e6),
+    url("../assets/fondo-formulario.webp") center / cover;
+}
+
+.seccion-formulario h2 {
+  margin-bottom: 60px;
+  color: #000;
+  font-size: 64px;
+  text-align: center;
+}
+
+.formulario-contacto {
+  max-width: 932px;
+  margin: auto;
+}
+.campos-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 22px;
+}
+
+.campos-contacto input:not([type="checkbox"]),
+.campos-contacto textarea {
+  width: 100%;
+  padding: 22px 30px;
+  border: 1px solid #c58b53;
+  border-radius: 12px;
+  background: #fff;
+  color: #000;
+  font: inherit;
+  font-size: 20px;
+  letter-spacing: 0.025em;
+}
+
+.campos-contacto input::placeholder,
+.campos-contacto textarea::placeholder {
+  color: #000;
+  opacity: 1;
+}
+.campos-contacto textarea {
+  height: 164px;
+  resize: vertical;
+}
+.mensaje-contacto {
+  grid-column: 2;
+  grid-row: 3 / 5;
+}
+.permisos-contacto {
+  grid-column: 1;
+  padding-left: 50px;
+}
+.permisos-contacto label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.permisos-contacto input {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  accent-color: var(--color-navy);
+}
+.enlace-privacidad {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.enlace-privacidad:hover {
+  text-decoration: underline;
+}
+.boton-enviar {
+  display: flex;
+  width: min(100%, 594px);
+  margin: 52px auto 0;
+}
+
+/* Maps se inicializa en este espacio vacío. */
+.ubicacion-contacto {
+  display: grid;
+  grid-template-columns: 57.7% 42.3%;
+}
+.mapa-contacto {
+  min-height: 371px;
+  background: #eaf2f5;
+}
+.direccion-contacto {
+  align-self: center;
+  padding: 60px 80px 60px 120px;
+}
+.direccion-contacto .icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+.direccion-contacto h2 {
+  color: #000;
+  font-size: 56px;
+}
+.direccion-contacto p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media (max-width: 1599px) {
+  .informes {
+    gap: 60px;
+  }
+  .datos-informes {
+    gap: 24px;
+    font-size: 15px;
+  }
+  .introduccion-informes h2,
+  .acceso-socios h2,
+  .seccion-formulario h2 {
+    font-size: 52px;
+  }
+  .acceso-socios {
+    gap: 100px;
+  }
+  .direccion-contacto {
+    padding: 40px 50px;
+  }
+  .direccion-contacto h2 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .informes {
+    gap: 40px;
+  }
+  .introduccion-informes > p:last-child {
+    font-size: 15px;
+  }
+  .datos-informes {
+    gap: 20px;
+    font-size: 13px;
+  }
+  .acceso-socios {
+    gap: 60px;
+  }
+  .acceso-socios .button {
+    min-width: 280px;
+  }
+  .direccion-contacto h2 {
+    font-size: 36px;
+  }
+  .direccion-contacto p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .informes {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    padding: 48px 24px;
+  }
+  .introduccion-informes h2,
+  .acceso-socios h2 {
+    font-size: 44px;
+  }
+  .datos-informes {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 24px;
+    font-size: 13px;
+  }
+  .datos-informes .icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 16px;
+  }
+  .acceso-socios {
+    flex-direction: column;
+    gap: 28px;
+    min-height: 0;
+    padding: 48px 24px;
+  }
+  .acceso-socios .button {
+    width: 100%;
+    max-width: 372px;
+    min-width: 0;
+  }
+  .acceso-socios p {
+    font-size: 14px;
+  }
+  .seccion-formulario {
+    padding: 48px 24px;
+  }
+  .seccion-formulario h2 {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+  .campos-contacto {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .campos-contacto input:not([type="checkbox"]),
+  .campos-contacto textarea {
+    padding: 16px 18px;
+    font-size: 14px;
+  }
+  .mensaje-contacto {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .permisos-contacto {
+    padding-left: 0;
+  }
+  .permisos-contacto label {
+    font-size: 12px;
+  }
+  .permisos-contacto input {
+    width: 20px;
+    height: 20px;
+  }
+  .boton-enviar {
+    margin-top: 28px;
+  }
+  .ubicacion-contacto {
+    grid-template-columns: 1fr;
+  }
+  .mapa-contacto {
+    min-height: 300px;
+  }
+  .direccion-contacto {
+    padding: 36px 24px;
+  }
+}

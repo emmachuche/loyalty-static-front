@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Loyalty Destination Club. Hoteles, viajes y experiencias en el Caribe mexicano."
+    />
+    <title>Beneficios | Loyalty Destination Club</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/beneficios.css" />
+    <script src="js/principal.js" defer></script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- COMPONENTE: Cabecera y navegación principal -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Loyalty Destination Club: inicio">
+          <img src="assets/logo.svg" alt="Loyalty Destination Club" width="326" height="55" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          data-menu-toggle
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 5h18M3 12h18M3 19h18" />
+          </svg>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="el-club.html">El Club</a></li>
+            <li><a href="hoteles.html">Hoteles</a></li>
+            <li><a href="experiencias.html">Experiencias</a></li>
+            <li><a href="beneficios.html" aria-current="page">Beneficios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button
+            class="language-control"
+            type="button"
+            aria-label="Idioma: español"
+            data-action="cambiar-idioma"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" /></svg
+            ><span>Es</span>
+          </button>
+          <a class="button button--nav" href="login.html">Acceso a Socios</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- COMPONENTE: Banner principal -->
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero__image" src="assets/hero-beneficios.webp" alt="" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <h1 id="hero-title">Tu Club Te Acompaña<br />Por El Mundo</h1>
+          <p class="hero__description">
+            Beneficios para viajar más, mejor y a<br />precios preferenciales.
+          </p>
+        </div>
+      </section>
+
+      <section class="lista-beneficios" aria-label="Beneficios de la membresía">
+        <article class="tarjeta-beneficio">
+          <img
+            class="foto-beneficio"
+            src="assets/beneficio-hospedaje.webp"
+            alt="Hotel frente al mar Caribe"
+          />
+          <div class="texto-beneficio">
+            <h2>Más de 200,000<br />Opciones de Hospedaje</h2>
+            <p>Resorts y hoteles en todo el mundo con tarifas exclusivas para socios.</p>
+          </div>
+          <div class="aliado-beneficio">
+            <img src="assets/deluxe-travel.svg" alt="Deluxe Travel 360" />
+          </div>
+        </article>
+
+        <article class="tarjeta-beneficio">
+          <img
+            class="foto-beneficio"
+            src="assets/beneficio-rci.webp"
+            alt="Habitación con balcón y vista al mar"
+          />
+          <div class="texto-beneficio">
+            <h2>Intercambio con RCI</h2>
+            <p>Intercambia tus vacaciones en miles de destinos afiliados.</p>
+          </div>
+          <div class="aliado-beneficio">
+            <img src="assets/rci-platinum.svg" alt="RCI Platinum" />
+          </div>
+        </article>
+
+        <article class="tarjeta-beneficio">
+          <img
+            class="foto-beneficio"
+            src="assets/beneficio-vuelos.webp"
+            alt="Vista del atardecer desde un avión"
+          />
+          <div class="texto-beneficio">
+            <h2>Vuelos</h2>
+            <p>Beneficios en boletos de avión con FlyBack.</p>
+          </div>
+          <div class="aliado-beneficio"><img src="assets/flyback.svg" alt="FlyBack" /></div>
+        </article>
+
+        <article class="tarjeta-beneficio">
+          <img
+            class="foto-beneficio"
+            src="assets/beneficio-autos.webp"
+            alt="Automóvil recorriendo una carretera junto al mar"
+          />
+          <div class="texto-beneficio">
+            <h2>Renta de Autos</h2>
+            <p>Beneficios con Hertz para moverte con libertad.</p>
+          </div>
+          <div class="aliado-beneficio"><img src="assets/hertz-avasa.svg" alt="Hertz Avasa" /></div>
+        </article>
+
+        <article class="tarjeta-beneficio">
+          <img
+            class="foto-beneficio"
+            src="assets/atencion-socios.webp"
+            alt="Una asesora atendiendo a una pareja en el resort"
+          />
+          <div class="texto-beneficio">
+            <h2>Loyalty Sharing</h2>
+            <p>
+              Comparte tus beneficios de hospedaje con familia y amigos, y recibe beneficios por
+              cada referido. Tus propias vacaciones quedan intactas.
+            </p>
+          </div>
+          <div class="aliado-beneficio">
+            <img src="assets/loyalty-sharing.svg" alt="Loyalty Sharing" />
+          </div>
+        </article>
+      </section>
+
+      <section class="como-usarlos" aria-labelledby="titulo-uso">
+        <h2 id="titulo-uso">¿Cómo Usarlos?</h2>
+        <div class="opciones-beneficios">
+          <div>
+            <a class="button button--gold" href="login.html"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="m9 4 8 8-8 8" /></svg
+              >Entra al portal</a
+            >
+            <p>con tu acceso de socio</p>
+          </div>
+          <div>
+            <a class="button button--outline" href="contacto.html"
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="m6 3 4 5-3 3c1.5 3 3 4.5 6 6l3-3 5 4c-1 4-4 5-8 3C6 18 3 13 2 7 1.5 4 3 2 6 3Z"
+                /></svg
+              >Contáctanos</a
+            >
+            <p>y te ayudamos a reservar</p>
+          </div>
+        </div>
+      </section>
+
+      <p class="aviso-beneficios">
+        Beneficios sujetos a disponibilidad y a los términos de cada aliado.
+      </p>
+    </main>
+
+    <!-- COMPONENTE: Pie de página -->
+    <footer class="site-footer site-footer--dark">
+      <img
+        class="site-footer__mark"
+        src="assets/portal-mark.svg"
+        alt="Loyalty Destination Club"
+        width="58"
+        height="55"
+      />
+      <p class="site-footer__copyright">© 2026 Minivac Certificate. All rights reserved.</p>
+      <div class="site-footer__provider">
+        <p>Powered by Valcubity<sup>®</sup> · © 2026 Valcubity. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -3,6 +3,57 @@
   padding: 88px 32px 104px;
 }
 
+.m-auto{
+  margin: auto;
+}
+
+.icono-tamanio-grande {
+  display: inline-block;
+  width: 87px;
+  height: 87px;
+  margin-bottom: 38px;
+}
+
+.icono-tamanio-mediano {
+  display: inline-block;
+  width: 102px;
+  height: 82px;
+}
+
+.icono-tamanio-gigante{
+  display: inline-block;
+  width: 163px;
+  height: 163px;
+}
+
+.color-brown{
+   background-color: #C09759; 
+}
+
+.color-blue{
+  background-color: #0E2A43;
+}
+
+.icono-mision { -webkit-mask-image: url('SVG/mision.svg'); mask-image: url('SVG/mision.svg'); }
+
+.icono-vision { -webkit-mask-image: url('SVG/vision.svg'); mask-image: url('SVG/vision.svg'); }
+
+.icono-servir { -webkit-mask-image: url('SVG/valor1.svg'); mask-image: url('SVG/valor1.svg'); }
+
+.icono-transparencia { -webkit-mask-image: url('SVG/valor2.svg'); mask-image: url('SVG/valor2.svg'); }
+
+.icono-confianza { -webkit-mask-image: url('SVG/valor3.svg'); mask-image: url('SVG/valor3.svg'); }
+
+.icono-excelencia { -webkit-mask-image: url('SVG/valor4.svg'); mask-image: url('SVG/valor4.svg'); }
+
+.icono-innovacion { -webkit-mask-image: url('SVG/valor5.svg'); mask-image: url('SVG/valor5.svg'); }
+
+.icono-vitalidad { -webkit-mask-image: url('SVG/valor6.svg'); mask-image: url('SVG/valor6.svg'); }
+
+.icono-hospitalidad { -webkit-mask-image: url('SVG/valor-big1.svg'); mask-image: url('SVG/valor-big1.svg'); }
+.icono-vuelo { -webkit-mask-image: url('SVG/valor-big2.svg'); mask-image: url('SVG/valor-big2.svg'); }
+.icono-experiencia { -webkit-mask-image: url('SVG/valor-big3.svg'); mask-image: url('SVG/valor-big3.svg'); }
+
 .purpose-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
