@@ -330,6 +330,10 @@ img {
   object-fit: cover;
 }
 
+.hero--experiences{
+  margin-bottom: 55px;
+}
+
 .hero__overlay {
   background: linear-gradient(180deg, #102844 0%, #03080e00 100%);
   opacity: 0.59;
@@ -356,6 +360,11 @@ img {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.035em;
+}
+
+.hero__description__large {
+  width: 26%;
+  margin: 40px auto;
 }
 
 .hero__actions {
