@@ -46,19 +46,19 @@
 }
 
 .beneficios-vuelos{
-  -webkit-mask-image: url('../SVG/beneficios-vuelos.svg'); mask-image: url('../SVG/beneficios-vuelos.svg');
+  -webkit-mask-image: url('../SVG/beneficio-vuelos.svg'); mask-image: url('../SVG/beneficio-vuelos.svg');
 }
 
 .beneficios-hospedaje {
-  -webkit-mask-image: url('../SVG/beneficios-hospedaje.svg'); mask-image: url('../SVG/beneficios-hospedaje.svg');
+  -webkit-mask-image: url('../SVG/beneficio-hospedaje.svg'); mask-image: url('../SVG/beneficio-hospedaje.svg');
 }
 
 .beneficios-autos{
-  -webkit-mask-image: url('../SVG/beneficios-autos.svg'); mask-image: url('../SVG/beneficios-autos.svg');
+  -webkit-mask-image: url('../SVG/beneficio-autos.svg'); mask-image: url('../SVG/beneficio-autos.svg');
 }
 
 .beneficios-loyalty{
-  -webkit-mask-image: url('../SVG/beneficios-loyalty.svg'); mask-image: url('../SVG/beneficios-loyalty.svg');
+  -webkit-mask-image: url('../SVG/beneficio-loyalty.svg'); mask-image: url('../SVG/beneficio-loyalty.svg');
 }
 
 
