@@ -13,6 +13,55 @@
   transition: background-color 0.3s ease;
 }
 
+.icono-tamanio-pequeño {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+}
+
+.icono-tamanio-mediano{
+  display: inline-block;
+  width: 88px;
+  height: 88px;
+} 
+
+.color-white {
+  background-color: #FFFFFF;
+}
+
+.color-brown {
+  background-color: #B57D46; 
+}
+
+.icono-hoteles{
+  -webkit-mask-image: url('../SVG/home-hoteles.svg'); mask-image: url('../SVG/home-hoteles.svg');
+}
+
+.icono-yates{
+  -webkit-mask-image: url('../SVG/home-yates.svg'); mask-image: url('../SVG/home-yates.svg');
+}
+
+.home-hospedajes{
+  -webkit-mask-image: url('../SVG/home-hospedajes.svg'); mask-image: url('../SVG/home-hospedajes.svg');
+}
+
+.beneficios-vuelos{
+  -webkit-mask-image: url('../SVG/beneficios-vuelos.svg'); mask-image: url('../SVG/beneficios-vuelos.svg');
+}
+
+.beneficios-hospedaje {
+  -webkit-mask-image: url('../SVG/beneficios-hospedaje.svg'); mask-image: url('../SVG/beneficios-hospedaje.svg');
+}
+
+.beneficios-autos{
+  -webkit-mask-image: url('../SVG/beneficios-autos.svg'); mask-image: url('../SVG/beneficios-autos.svg');
+}
+
+.beneficios-loyalty{
+  -webkit-mask-image: url('../SVG/beneficios-loyalty.svg'); mask-image: url('../SVG/beneficios-loyalty.svg');
+}
+
+
 
 .hero--home .hero__overlay {
   opacity: 0.9;
