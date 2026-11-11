@@ -42,7 +42,7 @@
 }
 
 .home-hospedajes{
-  -webkit-mask-image: url('../SVG/home-hospedajes.svg'); mask-image: url('../SVG/home-hospedajes.svg');
+  -webkit-mask-image: url('../SVG/home-hospedaje.svg'); mask-image: url('../SVG/home-hospedaje.svg');
 }
 
 .beneficios-vuelos{
