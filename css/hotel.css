@@ -3,6 +3,36 @@
   opacity: 0.73;
 }
 
+.m-auto{
+  margin: auto;
+}
+
+.icono {
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  transition: background-color 0.3s ease;
+}
+
+.icono-tamanio-grande {
+  display: inline-block;
+  width: 90px;
+  height: 71px;
+}
+
+.color-blue{
+  background-color: #0E2A43;
+}
+
+.icono-restaurante { -webkit-mask-image: url('../SVG/amenity-restaurante.svg'); mask-image: url('../SVG/amenity-restaurante.svg'); }  
+.icono-cafe { -webkit-mask-image: url('../SVG/amenity-bares-cafes.svg'); mask-image: url('../SVG/amenity-bares-cafes.svg'); }  
+.icono-gym { -webkit-mask-image: url('../SVG/amenity-gym.svg'); mask-image: url('../SVG/amenity-gym.svg'); }  
+.icono-alberca { -webkit-mask-image: url('../SVG/amenity-pool.svg'); mask-image: url('../SVG/amenity-pool.svg'); }
+.icono-playa { -webkit-mask-image: url('../SVG/amenity-beach.svg'); mask-image: url('../SVG/amenity-beach.svg'); }  
+.icono-spa { -webkit-mask-image: url('../SVG/amenity-spa.svg'); mask-image: url('../SVG/amenity-spa.svg'); }  
 /* Introducción del resort. */
 .resort-intro {
   padding: 88px 32px 86px;
