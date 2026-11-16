@@ -1,7 +1,4 @@
-/*
- * Interacciones generales en JavaScript vanilla.
- * El contenido de las páginas está escrito directamente en los archivos HTML.
- */
+
 (() => {
   "use strict";
 
@@ -48,11 +45,47 @@
       }
     });
   }
+})();
 
-  /* Los formularios se conectarán después a los servicios de tu proyecto. */
-  document.querySelectorAll("[data-static-form]").forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
+/* Mismos filtros, aplicados a los bloques de destinos. */
+/* Filtros de presentación en memoria; no consultan ninguna API. */
+(() => {
+  "use strict";
+
+  const catalog = document.querySelector("[data-hotel-catalog]");
+
+  if (!catalog) {
+    return;
+  }
+
+  const buttons = Array.from(catalog.querySelectorAll("[data-hotel-filter]"));
+  const cards = Array.from(catalog.querySelectorAll("[data-hotel-card]"));
+  const status = catalog.querySelector("[data-hotel-results]");
+
+  function filterHotels(destination) {
+    cards.forEach((card) => {
+      const isVisible = destination === "todos" || card.dataset.destination === destination;
+
+      card.hidden = !isVisible;
+    });
+
+    buttons.forEach((button) => {
+      const isActive = button.dataset.hotelFilter === destination;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    if (status) {
+      const selectedButton = buttons.find((button) => button.dataset.hotelFilter === destination);
+      status.textContent = `Destino seleccionado: ${selectedButton.textContent.trim()}`;
+    }
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      filterHotels(button.dataset.hotelFilter);
     });
   });
+
+  filterHotels(catalog.dataset.initialFilter || "todos");
 })();

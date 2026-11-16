@@ -1,0 +1,304 @@
+/* Banner y presentación de la marca. */
+.banner-destinos .hero__overlay {
+  opacity: 1;
+}
+.banner-destinos .hero__description {
+  margin-top: 18px;
+}
+
+.introduccion-destinos {
+  padding: 120px 24px 100px;
+  text-align: center;
+}
+
+.logo-distinctive {
+  display: block;
+  width: 462px;
+  max-width: 100%;
+  height: 104px;
+  margin: 0 auto 80px;
+  object-fit: contain;
+}
+
+.introduccion-destinos h2 {
+  color: #000;
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
+
+.introduccion-destinos p {
+  max-width: 900px;
+  margin: 32px auto 0;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.025em;
+}
+
+/* Botones de filtros y bloques de cada destino. */
+.seccion-destinos {
+  padding: 72px 32px 120px;
+  background: #f9f7f2;
+}
+
+.contenedor-destinos {
+  max-width: 1634px;
+  margin: auto;
+}
+.seccion-destinos h2 {
+  color: #0e2a43;
+  font-size: 64px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.filtros-destinos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 68px;
+  padding-bottom: 44px;
+  border-bottom: 1px solid #b57d46;
+}
+
+.filtro-destino {
+  min-height: 80px;
+  padding: 16px 20px;
+  border: 1px solid #6989a5;
+  border-radius: 50px;
+  background: transparent;
+  color: #0e2a43;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filtro-destino:hover {
+  background: #0e2a4310;
+}
+.filtro-destino.is-active {
+  border-color: #0e2a43;
+  background: #0e2a43;
+  color: #fff;
+}
+.filtro-destino:focus-visible {
+  outline: 2px solid #b57d46;
+  outline-offset: 4px;
+}
+
+.detalle-destino {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  align-items: center;
+  margin-top: 104px;
+}
+
+/* Evita que display: grid haga visibles los destinos ocultos. */
+.detalle-destino[hidden] {
+  display: none;
+}
+.texto-destino {
+  padding-left: 94px;
+  padding-right: 40px;
+}
+.texto-destino h3 {
+  color: #0e2a43;
+  margin-bottom: 20px;
+  font-size: 64px;
+  line-height: 1.1;
+}
+.texto-destino p {
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.025em;
+}
+.fotos-destino {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  margin-left: 72px;
+}
+.fotos-destino img {
+  width: 100%;
+  height: 427px;
+  border-radius: 48px;
+  object-fit: cover;
+  box-shadow: 0 6px 8px #00000029;
+}
+
+/* Llamado a contacto del diseño. */
+.contacto-destinos {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  background: #0e2a43;
+}
+.foto-contacto {
+  position: relative;
+  min-height: 550px;
+}
+.foto-contacto img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.foto-contacto::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 55%, #0e2a43);
+  content: "";
+}
+.texto-contacto {
+  align-self: center;
+  padding: 60px 32px 60px 0;
+  text-align: center;
+}
+.texto-contacto h2 {
+  color: #fff;
+  font-size: 64px;
+  line-height: 1.25;
+}
+.texto-contacto .button {
+  min-width: 372px;
+  margin-top: 28px;
+  background: #a9732e;
+}
+
+@media (max-width: 1599px) {
+  .introduccion-destinos {
+    padding-block: 80px;
+  }
+  .logo-distinctive {
+    margin-bottom: 50px;
+  }
+  .seccion-destinos h2,
+  .texto-destino h3,
+  .texto-contacto h2 {
+    font-size: 52px;
+  }
+  .texto-destino {
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  .texto-destino p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .fotos-destino {
+    margin-left: 32px;
+  }
+  .fotos-destino img {
+    height: 380px;
+    border-radius: 36px;
+  }
+  .texto-contacto .button {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .detalle-destino {
+    grid-template-columns: 42% 58%;
+  }
+  .texto-destino {
+    padding-left: 0;
+  }
+  .texto-destino h3 {
+    font-size: 44px;
+  }
+  .fotos-destino {
+    margin-left: 12px;
+    gap: 16px;
+  }
+  .fotos-destino img {
+    height: 340px;
+    border-radius: 28px;
+  }
+  .texto-contacto h2 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 767px) {
+  .introduccion-destinos {
+    padding: 56px 24px;
+  }
+  .logo-distinctive {
+    width: 300px;
+    height: auto;
+    margin-bottom: 32px;
+  }
+  .introduccion-destinos h2 {
+    font-size: 17px;
+  }
+  .introduccion-destinos p {
+    margin-top: 22px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .seccion-destinos {
+    padding: 48px 24px 56px;
+  }
+  .seccion-destinos h2 {
+    font-size: 44px;
+  }
+  .filtros-destinos {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 32px;
+    padding-bottom: 28px;
+  }
+  .filtro-destino {
+    min-height: 56px;
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+  .detalle-destino {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin-top: 36px;
+  }
+  .texto-destino {
+    padding: 0;
+  }
+  .texto-destino h3 {
+    font-size: 44px;
+  }
+  .texto-destino p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .fotos-destino {
+    gap: 14px;
+    margin: 0;
+  }
+  .fotos-destino img {
+    height: 230px;
+    border-radius: 24px;
+  }
+  .contacto-destinos {
+    grid-template-columns: 1fr;
+  }
+  .foto-contacto {
+    min-height: 0;
+    height: 280px;
+  }
+  .foto-contacto::after {
+    background: linear-gradient(180deg, transparent 55%, #0e2a43);
+  }
+  .texto-contacto {
+    padding: 24px 24px 56px;
+  }
+  .texto-contacto h2 {
+    font-size: 44px;
+  }
+  .texto-contacto .button {
+    min-width: 0;
+    width: 100%;
+    max-width: 372px;
+  }
+}
