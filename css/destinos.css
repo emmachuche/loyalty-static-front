@@ -115,6 +115,18 @@
   line-height: 31px;
   letter-spacing: 0.025em;
 }
+
+.texto-destino ul {
+   font-size: 18px;
+  line-height: 31px;
+  letter-spacing: 0.025em;
+  margin-bottom: 20px;
+}
+
+.texto-destino ul li::marker {
+  color: #B57D46;
+}
+
 .fotos-destino {
   display: grid;
   grid-template-columns: 1fr 1fr;
