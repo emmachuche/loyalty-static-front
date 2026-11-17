@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Loyalty Destination Club. Hoteles, viajes y experiencias en el Caribe mexicano."
+    />
+    <title>Destinos | Loyalty Destination Club</title>
+    <link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/destinos.css" />
+    <script src="js/principal.js" defer></script>
+  </head>
+  <body class="">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- COMPONENTE: Cabecera y navegación principal -->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Loyalty Destination Club: inicio">
+          <img src="assets/logo.svg" alt="Loyalty Destination Club" width="326" height="55" />
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+          data-menu-toggle
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M3 5h18M3 12h18M3 19h18" />
+          </svg>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="el-club.html">El Club</a></li>
+            <li><a href="destinos.html" aria-current="page">Destinos</a></li>
+            <li><a href="experiencias.html">Experiencias</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button
+            class="language-control"
+            type="button"
+            aria-label="Idioma: español"
+            data-action="cambiar-idioma"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a18 18 0 0 1 0 20 18 18 0 0 1 0-20" /></svg
+            ><span>Es</span>
+          </button>
+          <a class="button button--nav" href="login.html">Acceso a Socios</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <!-- COMPONENTE: Banner principal -->
+      <section class="hero banner-destinos" aria-labelledby="hero-title">
+        <img class="hero__image" src="assets/hero-destinos.webp" alt="" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">EL CARIBE MEXICANO</p>
+          <h1 id="hero-title">Descubre Nuestros Destinos</h1>
+          <p class="hero__description">
+            Lugares extraordinarios para crear<br />recuerdos inolvidables
+          </p>
+        </div>
+      </section>
+
+      <section class="introduccion-destinos" aria-label="Distinctive Concept Hotels">
+        <img
+          class="logo-distinctive"
+          src="assets/distinctive.svg"
+          alt="Distinctive Concept Hotels"
+          width="462"
+          height="104"
+        />
+        <h2>Una nueva forma de descubrir el Caribe</h2>
+        <p>
+          Loyalty Destination Club te conecta con una cuidada selección de destinos en el Caribe
+          mexicano, donde la belleza natural, la cultura y experiencias extraordinarias se unen para
+          crear viajes inolvidables.
+        </p>
+      </section>
+
+      <section
+        class="seccion-destinos"
+        aria-labelledby="titulo-destinos"
+        data-hotel-catalog
+        data-initial-filter="cancun"
+      >
+        <div class="contenedor-destinos">
+          <h2 id="titulo-destinos">Nuestros Destinos</h2>
+
+          <div class="filtros-destinos" role="group" aria-label="Seleccionar destino">
+            <button
+              class="filtro-destino is-active"
+              type="button"
+              data-hotel-filter="cancun"
+              aria-pressed="true"
+            >
+              Cancún
+            </button>
+            <button
+              class="filtro-destino"
+              type="button"
+              data-hotel-filter="playa-del-carmen"
+              aria-pressed="false"
+            >
+              Playa del Carmen
+            </button>
+            <button
+              class="filtro-destino"
+              type="button"
+              data-hotel-filter="tulum"
+              aria-pressed="false"
+            >
+              Tulum
+            </button>
+            <button
+              class="filtro-destino"
+              type="button"
+              data-hotel-filter="cozumel"
+              aria-pressed="false"
+            >
+              Cozumel
+            </button>
+          </div>
+          <p class="sr-only" aria-live="polite" data-hotel-results>Cancún seleccionado</p>
+
+          <article
+            class="detalle-destino"
+            data-hotel-card
+            data-destination="cancun"
+            aria-labelledby="titulo-cancun"
+          >
+            <div class="texto-destino">
+              <h3 id="titulo-cancun">Cancún</h3>
+              <p>
+                Donde el azul infinito del Caribe se encuentra con una energía que invita a vivir
+                cada instante. Cancún combina playas de arena blanca, experiencias extraordinarias y
+                una vibrante escena gastronómica en un entorno de belleza natural. Un destino donde
+                el descanso y la aventura conviven, creando el escenario perfecto para compartir
+                momentos que se convierten en recuerdos inolvidables.
+              </p>
+              <h4>Lo más destacado</h4>
+              <ul>
+                <li>Playas de arena blanca y mar turquesa</li>
+                <li>Vida nocturna y entretenimiento</li>
+                <li>Gastronomía internacional y local</li>
+                <li>Actividades acuáticas y deportes extremos</li>
+                <li>Excursiones a sitios arqueológicos cercanos</li>
+              </ul>
+              <p><strong>Datos rápidos:</strong> Aeropuerto Internacional de Cancún · Ideal para familias, parejas y grupos</p>
+            </div>
+            <div class="fotos-destino">
+              <img
+                src="assets/Cancun_01.jpg"
+                alt="Playa de arena blanca y mar turquesa en Cancún"
+                width="451"
+                height="427"
+              />
+              <img
+                src="assets/Cancun_02.jpg"
+                alt="Vista panorámica de la zona hotelera de Cancún"
+                width="451"
+                height="427"
+              />
+            </div>
+          </article>
+          <article
+            class="detalle-destino"
+            data-hotel-card
+            data-destination="playa-del-carmen"
+            aria-labelledby="titulo-playa-del-carmen"
+            hidden
+          >
+            <div class="texto-destino">
+              <h3 id="titulo-playa-del-carmen">Playa del Carmen</h3>
+              <p>
+                En el corazón de la Riviera Maya, Playa del Carmen cautiva con su esencia
+                cosmopolita y su espíritu relajado. Entre playas turquesa, calles llenas de vida y
+                una escena gastronómica en constante evolución, cada rincón invita a descubrir algo
+                nuevo. Un destino para explorar sin prisa, disfrutar de los pequeños placeres y
+                dejarse llevar por el ritmo incomparable del Caribe.
+              </p>
+              <h4>Lo más destacado</h4>
+              <ul>
+                <li>La Quinta Avenida, peatonal y llena de vida</li>
+                <li>Playas y beach clubs</li>
+                <li>Cenotes y parques de la Riviera Maya</li>
+                <li>Ferry a Cozumel</li>
+                <li>Gastronomía internacional y vida nocturna</li>
+              </ul>
+              <p><strong>Datos rápidos:</strong> A 1 hora del aeropuerto de Cancún · Ideal para parejas, familias y grupos</p>
+            </div>
+            <div class="fotos-destino">
+              <img
+                src="assets/Playa_del_Carmen_01.jpg"
+                alt="Atardecer en la playa de Playa del Carmen"
+                width="451"
+                height="427"
+              />
+              <img
+                src="assets/Playa_del_Carmen_02.jpg"
+                alt="Restaurantes y paseo peatonal de Playa del Carmen"
+                width="451"
+                height="427"
+              />
+            </div>
+          </article>
+          <article
+            class="detalle-destino"
+            data-hotel-card
+            data-destination="cozumel"
+            aria-labelledby="titulo-cozumel"
+            hidden
+          >
+            <div class="texto-destino">
+              <h3 id="titulo-cozumel">Cozumel</h3>
+              <p>
+                Rodeada por aguas cristalinas y algunos de los arrecifes más fascinantes del Caribe,
+                Cozumel es una isla donde la naturaleza marca el ritmo. Su belleza submarina,
+                paisajes tropicales y auténtica esencia isleña crean una experiencia que invita a
+                desconectarse de lo cotidiano. Aquí, cada encuentro con el mar es una oportunidad
+                para descubrir, maravillarse y reconectar con lo esencial.
+              </p>
+              <h4>Lo más destacado</h4>
+              <ul>
+                <li>Arrecifes de clase mundial para buceo y snorkel</li>
+                <li>Clubes de playa y aguas cristalinas</li>
+                <li>Malecón de San Miguel</li>
+                <li>Ambiente tranquilo de isla</li>
+                <li>Acceso en avión o en ferry desde Playa del Carmen</li>
+              </ul>
+              <p><strong>Datos rápidos:</strong>  Aeropuerto Internacional de Cozumel · Ideal para parejas, familias y amantes del mar</p>
+            </div>
+            <div class="fotos-destino">
+              <img
+                src="assets/Cozumel_01.jpg"
+                alt="Tortuga marina nadando sobre los arrecifes de Cozumel"
+                width="451"
+                height="427"
+              />
+              <img
+                src="assets/Cozumel_02.jpg"
+                alt="Faro junto al mar y la costa de Cozumel"
+                width="451"
+                height="427"
+              />
+            </div>
+          </article>
+          <article
+            class="detalle-destino"
+            data-hotel-card
+            data-destination="tulum"
+            aria-labelledby="titulo-tulum"
+            hidden
+          >
+            <div class="texto-destino">
+              <h3 id="titulo-tulum">Tulum</h3>
+              <p>
+                Entre la selva y el mar Caribe, Tulum revela un universo donde la historia
+                ancestral, la naturaleza y el espíritu contemporáneo se encuentran. Sus vestigios
+                mayas frente al mar, cenotes de aguas cristalinas y paisajes de belleza singular
+                invitan a explorar con todos los sentidos. Un destino para descubrir nuevas
+                perspectivas, reconectar con el entorno y vivir experiencias que permanecen mucho
+                después del viaje.
+              </p>
+              <h4>Lo más destacado</h4>
+              <ul>
+                <li>Zona arqueológica frente al mar</li>
+                <li>Cenotes de agua cristalina</li>
+                <li>Reserva de la Biosfera de Sian Ka'an</li>
+                <li>Gastronomía de autor y bienestar</li>
+                <li>Playas de arena blanca</li>
+              </ul>
+              <p><strong>Datos rápidos:</strong> A 1 hora del aeropuerto de Cancún · Ideal para parejas, familias y grupos</p>
+            </div>
+            <div class="fotos-destino">
+              <img
+                src="assets/Tulum_01.jpg"
+                alt="Ruinas mayas frente al mar Caribe en Tulum"
+                width="451"
+                height="427"
+              />
+              <img
+                src="assets/Tulum_02.jpg"
+                alt="Cenote de aguas cristalinas rodeado de vegetación en Tulum"
+                width="451"
+                height="427"
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contacto-destinos" aria-labelledby="titulo-contacto">
+        <div class="foto-contacto">
+          <img
+            src="assets/banner-destinos.webp"
+            alt="Terraza frente al mar al atardecer"
+            width="1109"
+            height="550"
+          />
+        </div>
+        <div class="texto-contacto">
+          <h2 id="titulo-contacto">¿Quieres hospedarte<br />Con nosotros?</h2>
+          <a class="button button--gold" href="contacto.html">Contáctanos</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-principal">
+      <div class="footer-contenido">
+        <div class="footer-marca">
+          <a class="footer-logo" href="index.html" aria-label="Loyalty Destination Club: inicio">
+            <!-- Coloca aquí tu SVG o una imagen con class="footer-logo-imagen". -->
+          </a>
+          <p class="footer-frase">Experiencias que<br />perduran entre<br />generaciones</p>
+        </div>
+
+        <nav class="footer-navegacion" aria-label="Mapa del sitio">
+          <h2 class="footer-titulo">Mapa de sitio</h2>
+          <ul class="footer-enlaces">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="el-club.html">El Club</a></li>
+            <li><a href="destinos.html">Destinos</a></li>
+            <li><a href="experiencias.html">Experiencias</a></li>
+            <li><a href="beneficios.html">Beneficios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-informes">
+          <h2 class="footer-titulo">Informes</h2>
+          <a href="tel:+18005550199">+1 (800) 555-0199</a>
+          <a href="mailto:info@loyaltydestinations.com">info@loyaltydestinations.com</a>
+          <p>Lunes a viernes<br />9:00 a 17:00h</p>
+        </div>
+
+        <div class="footer-social">
+          <h2 class="footer-titulo">Síguenos</h2>
+          <div class="footer-redes">
+            <a class="footer-red" href="#" aria-label="Facebook">
+              <!-- Coloca aquí tu SVG o una imagen con class="footer-red-icono". -->
+            </a>
+            <a class="footer-red" href="#" aria-label="Instagram">
+              <!-- Coloca aquí tu SVG o una imagen con class="footer-red-icono". -->
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <div class="footer-legal-enlaces">
+          <a href="#" data-action="terminos-uso">Términos de uso</a>
+          <span aria-hidden="true">•</span>
+          <a href="#" data-action="aviso-privacidad">Aviso de Privacidad</a>
+        </div>
+        <p class="footer-direccion">
+          Hotel Óleo Yalmakan, Blvd. Kukulcan km 19.5, Zona Hotelera, 77500 Cancún, Quintana Roo
+        </p>
+        <p class="footer-derechos">
+          ® 2027 Loyalty Destination Club, S.A. de C.V. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
