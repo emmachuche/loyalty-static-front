@@ -1,0 +1,99 @@
+/* Página de texto, sin banner ni hero. */
+.pagina-privacidad {
+  padding: 72px 32px 100px;
+  background: #fff;
+}
+
+.aviso-privacidad {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #26343e;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.aviso-privacidad h1 {
+  margin: 0 0 40px;
+  color: #0e2a43;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.apartado-privacidad {
+  margin-top: 40px;
+}
+
+.aviso-privacidad h2,
+.aviso-privacidad h3 {
+  color: #0e2a43;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.aviso-privacidad h2 {
+  margin: 0 0 18px;
+  font-size: 1.125rem;
+}
+
+.aviso-privacidad h3 {
+  margin: 26px 0 14px;
+  font-size: 1rem;
+}
+
+.aviso-privacidad p {
+  margin: 0 0 20px;
+  overflow-wrap: anywhere;
+}
+
+.aviso-privacidad ul {
+  margin: 0 0 24px;
+  padding-left: 26px;
+  list-style: disc;
+}
+
+.aviso-privacidad li {
+  margin-bottom: 8px;
+}
+
+.aviso-privacidad a {
+  color: #0e2a43;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.aviso-privacidad a:hover {
+  color: #8b5e32;
+}
+
+.aviso-privacidad a:focus-visible {
+  outline: 2px solid #b57d46;
+  outline-offset: 4px;
+}
+
+.aviso-privacidad .fecha-aviso {
+  margin: 40px 0 0;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .pagina-privacidad {
+    padding: 40px 24px 64px;
+  }
+
+  .aviso-privacidad h1 {
+    margin-bottom: 28px;
+    font-size: 2.5rem;
+  }
+
+  .apartado-privacidad {
+    margin-top: 32px;
+  }
+
+  .aviso-privacidad h2 {
+    font-size: 1rem;
+  }
+}
